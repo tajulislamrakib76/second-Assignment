@@ -2,10 +2,42 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
 /* share style */
-.btn:hover{
+.bold-size{
+  font-weight: 700;
+  font-size: 3rem;
+}
+.regular-size{
+  font-weight: 400;
+  font-size: 1rem;
+}
+.navbar , #podcast {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  background-color: #1A0B2E;
+  color: white;
+}
+.btn:hover {
  background-color: aqua;
 }
+
+.about-text , .about-card {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center; 
+}
+
+
 
 /* nav */
 
@@ -16,10 +48,7 @@ header{
 .navbar {
   padding: 16px 200px;
   justify-content: space-between;
-  align-items: center;
-  display: flex;
-  background-color: #1A0B2E;
-  color: white;
+  
 }
 
 .menu {
@@ -31,10 +60,10 @@ header{
     justify-content: center;
 }
 
-.logo{
+.logo {
   color: linear-gradient( 90deg,#F7E93F, #FB09B4, #9100F8);
   font-size: 30px;
-  font-weight: 7000;
+  font-weight: 700;
 }
 
 .span {
@@ -50,4 +79,92 @@ header{
   background: linear-gradient( 90deg,
     #F7E93F, #FB09B4, #9100F8);
 }
+/* hero */
+
+/* About */
+#podcast{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.divider {
+  height: 1px;
+  margin: 80px 0;
+  background: #1A0B2E;
+}
+.stats{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 120px;
+}
+.stat-box h3{
+  color: #00FF88;
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+.stat-box span{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
+}
+
+/* features */
+#features-section{
+  color: white;
+  background-color: #1a0b2e;
+}
+.section-title{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.features-grid{
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 
+  "tall     wide1    wide1"
+  "tall     wide2    wide2"
+  "bot-left bot-left bot-right"
+  ;
+}
+.card {
+  background: #1a0b2e;
+  border: 1px solid rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  padding: 40px ;
+}
+
+
+/* responsive media query */
+
+/* nav */
+@media (max-width:640px) {
+  .menu, .btn {
+    display: none;
+  }
+  .navbar {
+    display: block;
+    justify-content: space-between;
+    margin: 0px auto;
+  }
+
+  /* about */
+  .stats{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+
+
+
+
+
 
