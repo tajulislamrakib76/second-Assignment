@@ -130,6 +130,7 @@ header{
   max-width: 1200px;
   margin: 0 auto;
   margin-top:  40px;
+  padding-bottom: 120px;
   gap: 30px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 273px);
@@ -173,6 +174,62 @@ p {
   text-align: center;
   justify-content: center;
 }
+.featured-title{
+  padding-top: 40px;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.cards{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  padding-top: 40px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.carde{
+  width: 380px;
+  border: 1px solid rgba(53, 17, 101, 0.4);
+}
+
+.carde-text{
+  text-align: left;
+  justify-content: center;
+  padding: 24px 24px 0px 24px;
+}
+
+.carde-text h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-logo{
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  display: flex;
+  gap: 6px;
+  margin-top: 12px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+.logo-img{
+  width: 20px;
+  height: 20px;
+}
+
+.play-button{
+  width: 60px;
+  height: 60px;  
+  border-radius: 50%; 
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: linear-gradient( 90deg,
+    #F7E93F, #FB09B4, #9100F8);
+}
+
 
 
 

@@ -11,6 +11,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="style/style.css">
     <title>My second Assignment</title>
 </head>
@@ -117,23 +119,39 @@
 
      <!-- featured -->
      <section id="featured-continer">
-         <h2>Featured Episodes</h2>
+         <h2 class="featured-title">Featured Episodes</h2>
 
       <div class="cards">
 
         <!-- card 1 -->
-         <div class="card">
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/DEtYsLNCuMM?si=tKolxw-o7wN4ghr-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         <div class="carde">
+         <div class="carde-img">
+            <a href="https://www.youtube.com/watch?v=Nm0pUnNrKy8">
+                <img src="image/Rectangle 1.png" alt="">
+            </a>
+            
+            <div class="play-button">
+               <i class="fa-solid fa-play fa-xl"></i>
+            </div>
+         </div>
+
+         <div class="carde-text">
+            <h2>The Future of AI in Everyday Life</h2>
+            <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+            <div class="card-logo">
+                <img src="image/clock.png" alt="icon" class="logo-img">
+                <span>42 min</span>
+            </div>
+         </div>
          </div>
         <!-- card 2 -->
-         <div class="card">
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/DEtYsLNCuMM?si=tKolxw-o7wN4ghr-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-         </div>
+          
+         
         <!-- card 3 -->
-         <div class="card">
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/DEtYsLNCuMM?si=tKolxw-o7wN4ghr-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         
          </div>
-      </div>
+         </div>
+      </div>     
      </section>
 </body>
 </html> 
