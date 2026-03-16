@@ -127,14 +127,117 @@ header{
 
 /* hero */
 #hero-section{
-  display: block;
-  background-image: url ('hero-bg-png');
-}
-
-#hero-section img{
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding-bottom: 150px;
 }
+
+.hero-container{
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* background image */
+.hero-container img{
+  width: 100%;
+}
+
+/* logo circle */
+.hero-logo{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-logo img{
+  width: 245px;
+  height: auto;
+}
+
+/* btn-new */
+.btn-new{
+  width: 75px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 1000px;
+  background-color: #00FF88;
+  color: #1A0B2E;
+  font-weight: 600;
+  font-size: 1.13rem;
+  position: absolute;
+  left: 72%;
+}
+
+/* microphone center */
+.hero-mic{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-mic img{
+  width: 80px;
+}
+
+/* text section */
+.hero-info{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+.hero-buttons{
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* spotify button */
+.spotify-btn{
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10000px;
+  color: white;
+  background:linear-gradient(90deg,#F7E93F,#FB09B4,#9100F8);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.spotify-btn:hover{
+  color: #1A0B2E;
+}
+
+/* subscribe button */
+.subscribe-btn{
+  padding: 12px 20px;
+  border: 1px solid #00FF88;
+  border-radius: 10000px;
+  color: #00FF88;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.subscribe-btn:hover{
+  background-color: #00FF88;
+  color: #1A0B2E;
+}
+.hero-title{
+  font-size: 3.75rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
 /* features */
 #features-section{
   color: white;
