@@ -368,7 +368,7 @@ p {
 #host{
   display: block;
 }
-.host-continer {
+.host-container {
   padding-bottom: 120px;
 }
 .host-title{
@@ -404,17 +404,23 @@ p {
 }
 
 /* footer */
-#foot{
+
+ #foot{
   justify-content: center;
-  
-}
-.background{
   position: relative;
-  
+  text-align: center;
+} 
+/* .background{
+  position: relative;
+  text-align: center;
+} */
+
+.background img{
+  width: 100%;
 }
 .footer-social{
   position: absolute;
-  top: 42%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -432,15 +438,17 @@ p {
   font-weight: 800;
   font-size: 3.75rem;
   margin-bottom: 32px;
-}
+} 
 
 .span{
   color: linear-gradient( 90deg,#F7E93F, #FB09B4, #9100F8);
-}
+} 
 
 .foot-logo {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 3rem;
   margin-bottom: 32px;
 }
@@ -453,6 +461,7 @@ p {
 .fl {
   display: flex;
 }
+
 .fl h3 {
   font-size: 1rem;
   font-weight: 500;
@@ -478,6 +487,66 @@ p {
   /* features */
   .features-grid{
     grid-template-columns: repeat(1,1fr);
+  }
+
+  /* host */
+
+  
+  .about-alex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .about-alex img{
+    width: 110px;
+    height: 110px;
+  }
+  .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .name{
+    font-size: 14px;
+  }
+
+  .text p{
+    font-size: 14px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .alex-logo{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .host-container{
+    padding: 25px 20px;
+  }
+
+  /* footer */
+  .foot-title{
+    font-size: 2.25rem;
+  }
+  .foot-logo{
+    gap: 1rem;
+    justify-content: center;
+  }
+  .flex{
+    width: 40%;
+    justify-content: center;
+  }
+
+  /* footer */
+  .foot-logo{
+    width: 45%;
+    justify-content: center;
   }
 }
 
