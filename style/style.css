@@ -435,7 +435,8 @@
   height: auto;
 }
 .footer-container{
-  margin: 40px;
+  margin: auto;
+  margin-bottom: 40px;
   position: relative;
   display: flex;
 }
@@ -455,12 +456,10 @@
 /* social */
 
 .social-container{
-  
   display: flex;
-  flex-wrap: wrap;
   position: absolute;
   top: 52%;
-  left: 30%;
+  left: 33%;
 }
 .social-container p {
   font-size: 15px;
@@ -473,10 +472,7 @@
   max-width: 544px;
   margin-left: 28px;
 }
-/* .foot-social p{
-  font-weight: 400;
-  font-size: 15px;
-} */
+
 .social{
   width: 24px;
   height: 24px;
@@ -485,11 +481,10 @@
 /* bottom */
 
 .bottom{
-  margin-top: 20px;
-  margin-bottom: 10px;
   position: absolute;
-  top: 80%;
+  top: 65%;
   left: 37%;
+  opacity: 0.5;
 }
 
 
@@ -602,7 +597,7 @@
 /* social */
 
 .social-container{
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   width: 100%;
   max-width: 250px;
   font-size: 9px;
@@ -618,9 +613,11 @@
 /* bottom */
 
 .bottom{
+  margin-top: 25px;
   position: absolute;
   top: 80%;
-  left: 13%;
+  left: 10%;
+  opacity: 0.5;
 } 
 
 }
